@@ -121,6 +121,7 @@ private:
 
     void cell_search_complete(cell_search_ret_t ret, srsue::phy_cell_t found_cell) override
     {
+      logger.info("(Lenss)We are here--2\n");
       cell_search_ret = ret;
       last_found_cell = found_cell;
       notify_cell_search();

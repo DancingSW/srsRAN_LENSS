@@ -294,6 +294,9 @@ rrc_interface_phy_lte::cell_search_ret_t sync::cell_search_start(phy_cell_t* fou
     ret.last_freq = rrc_interface_phy_lte::cell_search_ret_t::MORE_FREQS;
   }
 
+  Info("(Lenss)We are here--1\n");
+  Info("Ret = %d", ret.found);
+
   rrc_proc_state = PROC_IDLE;
 
   return ret;
